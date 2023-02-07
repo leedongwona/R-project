@@ -1,0 +1,11 @@
+rd = rsDriver(chromever = "106.0.5249.61", 4445L, 
+              remoteServerAddr="localhost")
+
+remDr = rd$client
+
+remDr$navigate("https://www.youtube.com/")
+
+el2 = remDr$findElement(using = "css", value = "#img src=")
+
+el2$clickElement()
+
